@@ -25,7 +25,6 @@ public class AddressBook {
         book.addBuddy(buddy2);
         book.removeBuddy(buddy2);
 
-        // ✅ Printing the list queries its contents
         System.out.println(book.buddies);
 
         System.out.println("AddressBook");
