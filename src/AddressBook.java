@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class AddressBook {
-    private ArrayList<BuddyInfo> buddies;
+    private final ArrayList<BuddyInfo> buddies;
 
     public AddressBook() {
         this.buddies = new ArrayList<>();
@@ -16,6 +16,18 @@ public class AddressBook {
     }
 
     public static void main(String[] args){
+        AddressBook book = new AddressBook();
+
+        BuddyInfo buddy1 = new BuddyInfo("buddy1");
+        BuddyInfo buddy2 = new BuddyInfo("buddy2");
+
+        book.addBuddy(buddy1);
+        book.addBuddy(buddy2);
+        book.removeBuddy(buddy2);
+
+        // ✅ Printing the list queries its contents
+        System.out.println(book.buddies);
+
         System.out.println("AddressBook");
     }
 }
