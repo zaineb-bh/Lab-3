@@ -26,7 +26,6 @@ public class AddressBook {
         book.removeBuddy(buddy2);
 
         System.out.println(book.buddies);
-
         System.out.println("AddressBook");
     }
 }
